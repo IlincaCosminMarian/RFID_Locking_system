@@ -21,10 +21,15 @@ int greenLEDPin = 6;
 
 void setup() 
 { 
+  
   Serial.begin(9600);     //Serial monitor is only required to get tag ID numbers and for troubleshooting
-  SPI.begin();            //Start SPI communication with reader
-  rfid.init();            //initialization 
-  pinMode(redLEDPin, OUTPUT);     //LED startup sequence
+ 
+ SPI.begin();            //Start SPI communication with reader
+
+rfid.init();            //initialization 
+
+pinMode(redLEDPin, OUTPUT);     //LED startup sequence
+  
   pinMode(greenLEDPin, OUTPUT);
   digitalWrite(redLEDPin, HIGH);
   delay(200);
