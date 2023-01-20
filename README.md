@@ -21,6 +21,7 @@ int greenLEDPin = 6;
 
 void setup() 
 { 
+
   
   Serial.begin(9600);     //Serial monitor is only required to get tag ID numbers and for troubleshooting
  
